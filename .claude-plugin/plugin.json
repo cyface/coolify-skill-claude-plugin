@@ -1,6 +1,6 @@
 {
   "name": "coolify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Interact with a self-hosted Coolify instance via its REST API — manage applications, databases, deployments, servers, services, and projects.",
   "author": {
     "name": "Tim White",
