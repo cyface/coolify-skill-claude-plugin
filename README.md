@@ -40,13 +40,13 @@ The skill calls a wrapper script (`coolify.sh`) via the Bash tool. To avoid prom
 {
   "permissions": {
     "allow": [
-      "Bash(/absolute/path/to/skills/coolify/coolify.sh *)"
+      "Bash(${CLAUDE_PLUGIN_ROOT}/skills/coolify/coolify.sh *)"
     ]
   }
 }
 ```
 
-Use the actual resolved path that Claude reports when the skill first activates.
+`${CLAUDE_PLUGIN_ROOT}` is set by Claude Code to the plugin's install directory, so this entry works regardless of where the plugin lives on disk.
 
 ## Usage
 
